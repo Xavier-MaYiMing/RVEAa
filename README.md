@@ -55,9 +55,9 @@ if __name__ == '__main__':
 
 It can be seen that RVEAa performs betters on MaOPs with irregular Pareto fronts than the original RVEA.
 
-![Pareto front RVEA](/Users/xavier/Desktop/Xavier Ma/个人算法主页/RVEAa/Pareto front RVEA.png)
+![](https://github.com/Xavier-MaYiMing/RVEAa/blob/main/Pareto%20front%20RVEA.png)
 
-![Pareto front RVEAa](/Users/xavier/Desktop/Xavier Ma/个人算法主页/RVEAa/Pareto front RVEAa.png)
+![](https://github.com/Xavier-MaYiMing/RVEAa/blob/main/Pareto%20front%20RVEAa.png)
 
 
 

@@ -109,7 +109,7 @@ def mutation(pop, lb, ub, eta_m):
     return pop
 
 
-def GAoperation(pop, objs, npop, nvar, nobj, lb, ub, eta_c, eta_m):
+def GAoperation(pop, npop, nvar, nobj, lb, ub, eta_c, eta_m):
     # genetic algorithm (GA) operation
     mating_pool = selection(pop, npop, nvar)
     off = crossover(mating_pool, lb, ub, eta_c)
@@ -238,7 +238,7 @@ def main(npop, iter, lb, ub, nobj=3, eta_c=30, eta_m=20, alpha=2, fr=0.1):
             print('Iteration: ' + str(t + 1) + ' completed.')
 
         # Step 2.1. GA operation
-        off, off_objs = GAoperation(pop, objs, npop, nvar, nobj, lb, ub, eta_c, eta_m)
+        off, off_objs = GAoperation(pop, npop, nvar, nobj, lb, ub, eta_c, eta_m)
 
         # Step 2.2. Environmental selection
         pop, objs = environmental_selection(np.concatenate((pop, off), axis=0), np.concatenate((objs, off_objs), axis=0), V, (t / iter) ** alpha)
